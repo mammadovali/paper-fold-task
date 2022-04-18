@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(51, 68, 68);
+  padding: 40px;
+}
+
+.paper {
+  position: relative;
+  width: 95%;
+  height: 220px;
+  background-color: white;
+  margin: 50px;
+}
+
+.paper::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  border-width: 100px 0 0 100px;
+  border-style: solid;
+  border-color: rgb(51, 68, 68) rgb(221, 221, 221);
+  transition: all ease 0.5s;
+}
+
+.paper:hover::before {
+  border-width: 150px 0 0 150px;
+  border-color: rgb(51, 68, 68) rgb(221, 221, 221);
+}
